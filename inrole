@@ -7,4 +7,4 @@ Syntax: `{tag.prefix}{tag.name} <ROLE>`}
 
 {=(execution):{if({in(&):{2}}==true):c: dump -f **%u** - %i -e -r {args}|error}}
 
-{{execution}}
+{{execution}} {override}
