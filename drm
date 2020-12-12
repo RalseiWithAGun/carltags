@@ -1,0 +1,27 @@
+{=(README):The purpose of this tag is to be able to remind yourself to run Dank Memer commands with cooldowns, such as `daily` and `redeem`.}
+
+{=(tag.prefix):!}
+{=(tag.name):drm}
+{=():}
+
+{=(item.options):yearly monthly weekly daily hourly gimmeboost redeem work fortnite}
+
+{=(r0):rm 1y Reminder to run `yearly` command.}
+{=(r1):rm 1month Reminder to run `monthly` command.}
+{=(r2):rm 1w Reminder to run `weekly` command.}
+{=(r3):rm 1d Reminder to run `daily command`.}
+{=(r4):rm 1h Reminder to run `hourly` command.}
+{=(r5):rm 9d Reminder to run `gimmeboost` command by tomorrow.}
+{=(r6):rm 3d Reminder to run `redeem` command.}
+{=(r7):rm 1h Reminder to run `work` command.}
+{=(r8):rm 1h Reminder to run `fortnite` command.}
+
+{=(error.msg):<a:voteno:718931493417648200> Incorrect usage. 
+Syntax: `{tag.prefix}{tag.name} <ITEM>`
+Available Items: `{item.options}`}
+
+{=(r-1):echo {error.msg}}
+{=(L1):{lower:{args}}}
+{=(Lopt):{lower:{item.options}}}
+{=(output.final):{if({in({L1}):{Lopt}}==true):{r{index({L1}):{item.options}}}|echo {error.msg}}}
+{c:{output.final}}
