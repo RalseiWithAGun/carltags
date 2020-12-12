@@ -14,7 +14,8 @@
 {=(r8):remind 1h Reminder to run `fortnite` command.}
 
 {=(error.msg):<a:voteno:718931493417648200> Incorrect usage. 
-Syntax: `{tag.prefix}{tag.name} <ITEM>`}
+Syntax: `{tag.prefix}{tag.name} <ITEM>`
+Available Items: `{item.options}`}
 
 {=(r-1):echo {error.msg}}
 {=(L1):{lower:{args}}}
